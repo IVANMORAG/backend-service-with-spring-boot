@@ -1,6 +1,7 @@
 # Backend Service with Spring Boot
 
 Este proyecto es una API creada con Spring Boot para gestionar canciones. Proporciona funcionalidades para registrar, editar y eliminar canciones.
+Puede consultar el manual AQUI
 
 ## Contenido
 
@@ -40,10 +41,12 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local.
 Configura tu conexión a la base de datos en el archivo `src/main/resources/application.properties`:
 
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/tu_base_de_datos
-spring.datasource.username=tu_usuario
-spring.datasource.password=tu_contraseña
+spring.application.name=API-TRAKS-TESJI
+spring.datasource.url=jdbc:mysql://localhost:3306/apitraks
+spring.datasource.username=root
+spring.datasource.password=
 spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 ```
 
 ### Paso 3: Crear el archivo `DatosApiTrak.java`
